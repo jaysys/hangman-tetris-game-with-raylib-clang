@@ -1,0 +1,41 @@
+# Compiled files
+*.o
+*.a
+*.so
+*.dll
+*.exe
+
+# Executable
+raylib_app
+
+# Build directory
+build/
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Local development files
+.env
+.env.local
+
+# Local Netlify folder
+.netlify

@@ -27,7 +27,7 @@ The classic tile-matching puzzle game where you arrange falling tetrominoes to c
 brew install raylib
 
 # Clone the repository
-git clone https://github.com/yourusername/raylib-game-collection.git
+git clone https://github.com/jaysys/hangman-tetris-game-with-raylib-clang.git
 cd raylib-game-collection
 ```
 

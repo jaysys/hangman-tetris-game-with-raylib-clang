@@ -39,8 +39,8 @@ sudo apt update
 sudo apt install build-essential git libraylib-dev
 
 # Clone the repository
-git clone https://github.com/yourusername/raylib-game-collection.git
-cd raylib-game-collection
+git clone https://github.com/jaysys/hangman-tetris-game-with-raylib-clang.git
+cd hangman-tetris-game-with-raylib-clang
 ```
 
 ### Windows

@@ -28,7 +28,7 @@ brew install raylib
 
 # Clone the repository
 git clone https://github.com/jaysys/hangman-tetris-game-with-raylib-clang.git
-cd raylib-game-collection
+cd hangman-tetris-game-with-raylib-clang
 ```
 
 ### Linux (Ubuntu/Debian)

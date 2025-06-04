@@ -1,11 +1,13 @@
 #include "raylib.h"
 #include "src/hangman/hangman.h"
 #include "src/tetris/tetris.h"
+#include "src/invaders/invaders.h"
 
 // Menu items
 typedef enum {
     MENU_HANGMAN,
     MENU_TETRIS,
+    MENU_INVADERS,
     MENU_EXIT,
     MENU_ITEMS_COUNT
 } MenuItem;
@@ -23,6 +25,7 @@ void RunGame(void) {
     const char* menuItems[MENU_ITEMS_COUNT] = {
         "Hangman Game",
         "Tetris",
+        "Space Invaders",
         "Exit"
     };
     
@@ -75,6 +78,26 @@ void RunGame(void) {
                     PlayTetris();
                     
                     // After Tetris is done, close its window and reopen menu
+                    CloseWindow();
+                    InitWindow(screenWidth, screenHeight, "Game Collection");
+                    SetTargetFPS(60);
+                    break;
+                }
+                case MENU_INVADERS: {
+                    // Create a new window for Space Invaders
+                    int gameWidth = 800;
+                    int gameHeight = 600;
+                    
+                    // Close the menu window
+                    CloseWindow();
+                    
+                    // Initialize Space Invaders window
+                    InitWindow(gameWidth, gameHeight, "Space Invaders");
+                    SetTargetFPS(60);
+                    
+                    PlayInvaders();
+                    
+                    // After Space Invaders is done, close its window and reopen menu
                     CloseWindow();
                     InitWindow(screenWidth, screenHeight, "Game Collection");
                     SetTargetFPS(60);

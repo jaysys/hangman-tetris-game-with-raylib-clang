@@ -9,7 +9,7 @@ UNAME_S := $(shell uname -s)
 
 # Compiler flags
 CFLAGS = -Wall -std=c99 -D_DEFAULT_SOURCE -Wno-missing-braces -Wunused-result
-INCLUDES = -I/opt/homebrew/include -Isrc/hangman -Isrc/tetris
+INCLUDES = -I/opt/homebrew/include -Isrc/hangman -Isrc/tetris -Isrc/invaders
 
 # Platform-specific settings
 ifeq ($(UNAME_S),Darwin)
@@ -23,7 +23,8 @@ endif
 # Source files
 SRC = main.c \
       src/hangman/hangman.c \
-      src/tetris/tetris.c
+      src/tetris/tetris.c \
+      src/invaders/invaders.c
 
 OBJ = $(SRC:.c=.o)
 

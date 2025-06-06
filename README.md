@@ -1,5 +1,9 @@
 # Hangman and Tetris Game with Raylib C language
 
+```
+Fully tested only on Mac 
+```
+
 A collection of classic games built with raylib, featuring Hangman and Tetris. This project demonstrates game development using C and raylib with a clean, modular architecture.
 
 ## 🎮 Games Included
